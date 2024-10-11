@@ -20,7 +20,7 @@ const Container = styled.div`
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
-  scrollbar-width; none;
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
