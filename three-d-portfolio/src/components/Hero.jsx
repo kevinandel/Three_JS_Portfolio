@@ -79,8 +79,8 @@ const Img = styled.img`
   animation: animate 2s infinite ease alternate;
 
   @keyframes animate {
-    to{
-        transform: translateY(20px);
+    to {
+      transform: translateY(20px);
     }
   }
 `;
