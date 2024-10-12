@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const data =  [
+const data = [
   "Web Design",
   "Development",
   "Illustration",
   "Product Design",
   "Social Media",
-]
+];
 
 const Section = styled.div`
   height: 100vh;
@@ -67,18 +67,22 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-  return <Section>
-    <Container>
-      <Left>
-        <List>
-          {data.map(item => <ListItem key={item} text={item}>{item}</ListItem>)}
-        </List>
-      </Left>
-      <Right>
-
-      </Right>
-    </Container>
-  </Section>;
+  return (
+    <Section>
+      <Container>
+        <Left>
+          <List>
+            {data.map((item) => (
+              <ListItem key={item} text={item}>
+                {item}
+              </ListItem>
+            ))}
+          </List>
+        </Left>
+        <Right></Right>
+      </Container>
+    </Section>
+  );
 };
 
 export default Works;
